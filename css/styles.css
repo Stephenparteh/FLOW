@@ -1,0 +1,108 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hero {
+  background-image: url("images/image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  animation: fadeIn 2s;
+}
+
+.service-box {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  animation: slideIn 1s;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  animation: zoomIn 1.5s;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  animation: fadeIn 2s;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  animation: fadeIn 1s;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #f9f9f9 !important;
+}
+
+.nav-item.active .nav-link {
+  color: #ffd700 !important;
+}
+
+.contact-form {
+  animation: fadeIn 1.5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  animation: fadeIn 1.5s;
+}
