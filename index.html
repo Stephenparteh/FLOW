@@ -13,12 +13,11 @@
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- <style>
+    <style>
         /* Custom styles for video background */
         .hero-section {
             position: relative;
             height: 60vh;
-            /* Adjusted for mobile */
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -34,7 +33,7 @@
             min-height: 100%;
             min-width: 100%;
             transform: translate(-50%, -50%);
-            z-index: -1;
+            /* z-index: -1; */
         }
 
         .hero-content {
@@ -91,7 +90,7 @@
         .mission-statement h5 {
             font-size: 1rem;
         }
-    </style> -->
+    </style>
 </head>
 
 <body>
@@ -122,7 +121,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section d-flex justify-content-center align-items-center vh-100 position-relative">
+    <section class="hero-section d-flex justify-content-center align-items-center position-relative"
+        style="background-color: green; height: 100vh;">
         <video autoplay muted loop class="w-100 h-100 position-absolute object-fit-cover top-0">
             <source src="flowHome.mp4" type="video/mp4">
             Your browser does not support the video tag.
