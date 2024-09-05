@@ -4,17 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forever Low Option for Water</title>
+    <meta name="description"
+        content="Forever Low-Cost Option for Water provides innovative technology to ensure access to clean drinking water.">
+    <meta name="keywords" content="clean water, water technology, sustainable water solutions, FLOW">
+    <title>Forever Low-Cost Option for Water</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- <style>
         /* Custom styles for video background */
         .hero-section {
             position: relative;
-            height: 90vh;
+            height: 60vh;
+            /* Adjusted for mobile */
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero-section video {
@@ -34,9 +42,56 @@
             z-index: 1;
             color: white;
             text-align: center;
-            padding: 100px 15px;
+            padding: 20px;
         }
-    </style>
+
+        .hero-content h1 {
+            font-size: 2rem;
+            /* Adjusted for mobile */
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+            /* Adjusted for mobile */
+        }
+
+        .service-box {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 767px) {
+            .hero-content {
+                padding: 40px 15px;
+            }
+
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero-content p {
+                font-size: 0.875rem;
+            }
+        }
+
+        .mission-statement {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .mission-statement h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .mission-statement h5 {
+            font-size: 1rem;
+        }
+    </style> -->
 </head>
 
 <body>
@@ -45,8 +100,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <img src="images/flowLogo-removebg-preview.png" style="object-fit: cover;" width="50" height="50"
-                    alt="">
-                <a class="navbar-brand" href="index.html">Forever Low Option for Water</a>
+                    alt="FLOW Logo">
+                <a class="navbar-brand" href="index.html">FLOW</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -67,53 +122,66 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <video autoplay muted loop>
+    <section class="hero-section d-flex justify-content-center align-items-center vh-100 position-relative">
+        <video autoplay muted loop class="w-100 h-100 position-absolute object-fit-cover top-0">
             <source src="flowHome.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="hero-content">
-            <h1 data-aos="fade-up">Welcome to Forever Low Option for Water</h1>
-            <p data-aos="fade-up" data-aos-delay="200">Join us in our mission to provide clean water and improve
-                sanitation for communities in need.</p>
-            <a href="contact.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Get Involved</a>
+        <div class="hero-content text-center text-light position-relative">
+            <h1 class="display-3" data-aos="fade-up">Welcome to FLOW</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Join us in our mission to provide clean water and
+                improve sanitation for communities in need.</p>
+            <a href="features.html" class="btn btn-primary mx-2" data-aos="fade-up" data-aos-delay="100">Explore our
+                Solution</a>
+            <a href="contact.html" class="btn btn-primary mx-2" data-aos="fade-up" data-aos-delay="100">Contact Us</a>
         </div>
     </section>
+
+    <!-- Mission Statement -->
+    <section class="bg-dark py-4">
+        <div class="container text-center">
+            <h1 class="text-light">Our Mission</h1>
+            <h5 class="text-light">We are dedicated to ensuring every community has access to clean and safe drinking
+                water. Our innovative technology and commitment to sustainability are transforming water access
+                worldwide.</h5>
+        </div>
+    </section>
+
 
     <!-- Key Services -->
     <section class="py-5">
         <div class="container">
-            <h2 data-aos="fade-up">Our Key Services</h2>
+            <h2 class="text-center" data-aos="fade-up">Our Key Features</h2>
             <div class="row">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-box bg-light p-4 shadow-sm rounded">
-                        <h4>Clean Water Access</h4>
-                        <p>Providing access to clean and safe drinking water through innovative solutions and
-                            technologies.</p>
+                        <h4>Innovative Water Extraction</h4>
+                        <p>Our advanced extraction technology ensures efficient and reliable access to clean water.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-box bg-light p-4 shadow-sm rounded">
-                        <h4>Sanitation Solutions</h4>
-                        <p>Improving sanitation facilities and practices to ensure better health and hygiene in
-                            communities.</p>
+                        <h4>Automated Monitoring</h4>
+                        <p>Real-time monitoring ensures water quality and system performance are consistently
+                            maintained.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-box bg-light p-4 shadow-sm rounded">
-                        <h4>Hygiene Education</h4>
-                        <p>Educating communities about proper hygiene practices to prevent diseases and improve quality
-                            of life.</p>
+                        <h4>Community Impact</h4>
+                        <p>We are committed to making a difference by providing clean water solutions that improve
+                            lives.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-            <p>&copy; 2024 Forever Low Option for Water. All Rights Reserved.</p>
+            <p>&copy; 2024 Forever Low-Cost Option for Water. All Rights Reserved.</p>
             <p>Follow us on:
                 <a href="#" class="text-white">Facebook</a> |
                 <a href="#" class="text-white">Twitter</a> |
@@ -121,6 +189,7 @@
             </p>
         </div>
     </footer>
+
 
     <!-- AOS JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
