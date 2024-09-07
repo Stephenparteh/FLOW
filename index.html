@@ -9,6 +9,7 @@
     <meta name="keywords" content="clean water, water technology, sustainable water solutions, FLOW">
     <title>Forever Low-Cost Option for Water</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -114,7 +115,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
                         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
@@ -188,31 +189,82 @@
         </div>
     </div>
 
-    <div class="container py-5" id="how-it-works">
-        <h2 class="text-center mb-4">How It Works</h2>
-        <div class="row">
-            <div class="col-md-3 text-center">
-                <img src="step1-icon.png" alt="Step 1" class="mb-2">
-                <h4>Step 1</h4>
-                <p>Water is extracted from natural sources using solar power.</p>
+    <!-- FAQ Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions (FAQs)</h2>
+        <div class="accordion " id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        How does the FLOW water system work?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        At FLOW, we use a combination of solar-powered pumps, IoT sensors, and user-friendly kiosks to
+                        provide clean water to underserved communities. The system works in the following steps:
+                        <ul>
+                            <li><strong>Water Extraction:</strong> We extract water from underground sources using
+                                solar-powered pumps, making the process energy-efficient and sustainable.</li>
+                            <li><strong>Water Quality Monitoring:</strong> IoT sensors monitor the water quality in
+                                real-time to ensure it meets safe drinking standards.</li>
+                            <li><strong>Water Distribution:</strong> Clean water is distributed via community kiosks,
+                                where residents can access it using mobile payments or prepaid cards.</li>
+                            <li><strong>Payment and Tracking:</strong> The system tracks water usage and allows users to
+                                pay through platforms like Orange Money, ensuring transparency and affordability.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 text-center">
-                <img src="step2-icon.png" alt="Step 2" class="mb-2">
-                <h4>Step 2</h4>
-                <p>Water quality is monitored through IoT sensors in real time.</p>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What areas does FLOW serve?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        FLOW is focused on providing safe drinking water to remote and underserved communities,
+                        particularly in Africa. Our primary areas of operation currently include rural regions in
+                        Liberia, where access to clean water has been a challenge. As we grow, we aim to expand our
+                        reach to other countries in need of sustainable water solutions.
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 text-center">
-                <img src="step3-icon.png" alt="Step 3" class="mb-2">
-                <h4>Step 3</h4>
-                <p>Water is distributed through kiosks based on demand.</p>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do I pay for water from a FLOW kiosk?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Paying for water at a FLOW kiosk is simple and convenient. You have two main options:
+                        <ul>
+                            <li><strong>Mobile Payment:</strong> You can pay for water using mobile money platforms such
+                                as Orange Money. Simply select the amount of water you need, make the payment via your
+                                mobile phone, and the kiosk will dispense the corresponding amount of water.</li>
+                            <li><strong>Prepaid Cards:</strong> For users without access to mobile payment services, we
+                                offer prepaid cards. These cards can be topped up with credit at designated locations,
+                                and then used at the kiosks to access water.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 text-center">
-                <img src="step4-icon.png" alt="Step 4" class="mb-2">
-                <h4>Step 4</h4>
-                <p>Usage data is tracked, and payments are made through Orange Money.</p>
-            </div>
+
         </div>
-    </div>
+    </section>
 
     <div class="jumbotron jumbotron-fluid bg-primary text-white text-center py-5">
         <div class="container">
@@ -251,7 +303,6 @@
         </div>
     </footer>
 
-
     <!-- AOS JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -260,6 +311,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
