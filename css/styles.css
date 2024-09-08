@@ -114,3 +114,39 @@ h5,
 p {
   animation: fadeIn 1.5s;
 }
+
+/* Add hover effects to all elements with class shadow-sm */
+.shadow-sm {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.shadow-sm:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Add hover effects to tech-feature */
+.tech-feature {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Add hover effects to team members */
+.d-flex:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+/* Add animations for sections */
+[data-aos] {
+  transition: opacity 0.6s ease-in-out;
+  opacity: 0;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
