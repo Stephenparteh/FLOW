@@ -4,11 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Forever Low Option for Water</title>
+    <title>FLOW - Features & Services</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .feature-card {
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .feature-description {
+            font-size: 1.1rem;
+            color: #555;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -39,7 +83,7 @@
     </header>
 
     <!-- Services Content -->
-    <section class="py-5">
+    <!-- <section class="py-5">
         <div class="container">
             <h2 data-aos="fade-up">Our Services</h2>
             <div class="row">
@@ -84,7 +128,124 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section id="main">
+        <div class="">
+            <img src="images/kiosk.png" class="img-fluid position-relative"
+                style="text-align: center; width: 100%; height: 30vh; object-fit: cover; opacity: 0.7; " alt="">
+        </div>
+
+        <div class="position-absolute  text-center left-50 w-100 font-weight-bold" style="top: 150px;">
+            <h2 class="font-weight-bold text-light" style="font-size: 250%;">Our <span class=""
+                    style="color: orange;">Features</span> & <span class=""
+                    style="color: orange;">Services</span> 
+            </h2>
+            <!-- <h1 class="font-weight-bold text-light" style="font-size: 350%;">About Us</h1> -->
+        </div>
     </section>
+    <!-- Features or Services Section -->
+    <section class="container my-5">
+        <!-- <h2 class="section-title">Our Features & Services</h2> -->
+        <p class="text-center mb-5">FLOW offers innovative, data-driven services to ensure sustainable water access to
+            underserved communities.</p>
+
+        <div class="row">
+            <!-- Feature 1: Solar-Powered Kiosks -->
+            <div class="col-md-6">
+                <div class="feature-card p-4 shadow-sm">
+                    <div class="feature-icon text-center">
+                        <i class="bi bi-sun"></i>
+                    </div>
+                    <h3 class="feature-title">Solar-Powered Kiosks</h3>
+                    <p class="feature-description">Our water kiosks are powered entirely by solar energy, making them a
+                        sustainable solution for areas with unreliable or no electricity. Solar panels ensure continuous
+                        operation, providing clean water even in remote locations.</p>
+                    <p class="key-data">Key Data: Powers up to 500 households daily, reduces carbon emissions by 30%.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2: IoT Sensors -->
+            <div class="col-md-6">
+                <div class="feature-card p-4 shadow-sm">
+                    <div class="feature-icon text-center">
+                        <i class="bi bi-cloud-arrow-up"></i>
+                    </div>
+                    <h3 class="feature-title">IoT Sensors for Water Monitoring</h3>
+                    <p class="feature-description">IoT sensors in the kiosks monitor water quality in real-time,
+                        tracking indicators like pH, turbidity, and contaminants. This data helps ensure that only safe
+                        drinking water is provided and allows for prompt maintenance.</p>
+                    <p class="key-data">Key Data: Real-time updates every 5 minutes, reduces waterborne diseases by 40%.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Feature 3: Automated Water Distribution -->
+            <div class="col-md-6">
+                <div class="feature-card p-4 shadow-sm">
+                    <div class="feature-icon text-center">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h3 class="feature-title">Automated Water Distribution</h3>
+                    <p class="feature-description">Our automated system allows users to purchase water via mobile
+                        payment solutions like Orange Money. This reduces the need for human operators and ensures fair
+                        and accurate distribution based on payment.</p>
+                    <p class="key-data">Key Data: Dispenses up to 100 liters per transaction, reduces water wastage,
+                        integrates mobile payments.</p>
+                </div>
+            </div>
+
+            <!-- Feature 4: Data-Driven Insights -->
+            <div class="col-md-6">
+                <div class="feature-card p-4 shadow-sm">
+                    <div class="feature-icon text-center">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h3 class="feature-title">Data-Driven Insights</h3>
+                    <p class="feature-description">Our platform provides detailed analytics on water consumption and
+                        system performance, enabling efficient resource management and helping us make data-driven
+                        decisions for scaling and improving our services.</p>
+                    <p class="key-data">Key Data: Real-time data and predictive analytics, reduces operational costs,
+                        optimizes system management.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Feature 5: Community Empowerment & Training -->
+            <div class="col-md-6">
+                <div class="feature-card p-4 shadow-sm">
+                    <div class="feature-icon text-center">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3 class="feature-title">Community Empowerment & Training</h3>
+                    <p class="feature-description">We provide training for local community members on kiosk management
+                        and maintenance, fostering ownership and ensuring long-term sustainability. Our program
+                        emphasizes skill development and local leadership.</p>
+                    <p class="key-data">Key Data: 70% of operators are local, 40% are female, training covers system
+                        maintenance and customer service.</p>
+                </div>
+            </div>
+
+            <!-- Feature 6: Water Safety Standards -->
+            <div class="col-md-6">
+                <div class="feature-card p-4 shadow-sm">
+                    <div class="feature-icon text-center">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3 class="feature-title">Water Safety Standards & Certification</h3>
+                    <p class="feature-description">FLOW ensures that water quality meets international safety standards
+                        through regular testing and certification. Integrated filtration and UV purification processes
+                        are used to ensure safe drinking water.</p>
+                    <p class="key-data">Key Data: 99.9% of contaminants removed, monthly safety certifications, adheres
+                        to WHO standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Call to Action -->
     <section class="py-5 bg-light text-center">
@@ -116,6 +277,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS and Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 
 </html>
