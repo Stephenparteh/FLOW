@@ -150,3 +150,8 @@ p {
 [data-aos].aos-animate {
   opacity: 1;
 }
+
+body {
+  padding-top: 60px;
+  /* Adjust based on your navbar height */
+}
